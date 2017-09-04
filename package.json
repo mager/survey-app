@@ -1,0 +1,31 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "8.1.1",
+    "npm": "5.0.3"
+  },
+  "scripts": {
+    "server": "nodemon index.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"yarn run server\" \"yarn run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-session": "^2.0.0-beta.2",
+    "express": "^4.15.3",
+    "mongoose": "^4.11.5",
+    "nodemon": "^1.11.0",
+    "passport": "^0.3.2",
+    "passport-google-oauth20": "^1.0.0"
+  },
+  "devDependencies": {
+    "body-parser": "^1.17.2",
+    "concurrently": "^3.5.0",
+    "prettier": "^1.6.0",
+    "stripe": "^4.24.1"
+  }
+}

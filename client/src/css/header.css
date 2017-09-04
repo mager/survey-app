@@ -1,0 +1,7 @@
+.button .icon:first-child:not(:last-child) {
+  margin-right: 9px;
+}
+
+.bd-emoji {
+  margin-right: 4px;
+}
