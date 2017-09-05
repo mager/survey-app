@@ -7,6 +7,8 @@ import logger from 'redux-logger';
 
 import App from './components/App';
 import reducers from './reducers';
+import axios from 'axios';
+window.axios = axios;
 
 const store = createStore(reducers, {}, applyMiddleware(thunk, logger));
 
